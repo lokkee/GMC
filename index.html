@@ -15,10 +15,11 @@
   Name: 
   <span id="name">Global Missional Church (Birmingham)</span>
   <br><button id="1" onclick="myFunction1()">Copy Name</button>
-  <br><br>Sort Code 
-  <input type="text" value="60-19-14" id="sortcode" readonly>
+  <br><br>Sort Code: 
+  <span id="sortcode">60-19-14</span>
   <br><button id="2" onclick="myFunction2()">Copy Sort Code</button>
-  <br><br>Account No. <input type="text" value="35453427" id="no" readonly>
+  <br><br>Account No.: 
+  <span id="no">35453427</span>
   <br><button id="3" onclick="myFunction3()">Copy Account No.</button>
   <br><br>Reference 請填上奉獻者全名和電話號碼，以作紀錄。
 </p> 
@@ -68,7 +69,7 @@ function myFunction3() {
   copyNo.setSelectionRange(0, 99999); /* For mobile devices */
 
   /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyNo.value);
+  navigator.clipboard.writeText(copyNo.innerText);
   
   button.innerHTML = "Copied";
   setTimeout(function() {
