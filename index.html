@@ -5,6 +5,8 @@
 </head>
 <body>
 
+<h2>銀行轉帳奉獻</h2>  
+  
 <p>如會眾想透過銀行轉帳奉獻，可將奉獻轉帳至教會戶口：</p>
 
 <p>
@@ -32,12 +34,10 @@ function myFunction1() {
   /* Copy the text inside the text field */
   navigator.clipboard.writeText(copyName.value);
   
-  /* Alert the copied text */
-//   alert("Copied: " + copyName.value);
   button.innerHTML = "Copied";
   setTimeout(function() {
       button.innerHTML = "Copy Name";
-  }, 1000);
+  }, 2000);
 }
 function myFunction2() {
   /* Get the text field */
@@ -50,8 +50,10 @@ function myFunction2() {
   /* Copy the text inside the text field */
   navigator.clipboard.writeText(copySortcode.value);
   
-  /* Alert the copied text */
-  alert("Copied: " + copySortcode.value);
+  button.innerHTML = "Copied";
+  setTimeout(function() {
+      button.innerHTML = "Copy Sort Code";
+  }, 2000);
 }
 function myFunction3() {
   /* Get the text field */
@@ -64,8 +66,10 @@ function myFunction3() {
   /* Copy the text inside the text field */
   navigator.clipboard.writeText(copyNo.value);
   
-  /* Alert the copied text */
-  alert("Copied: " + copyNo.value);
+  button.innerHTML = "Copied";
+  setTimeout(function() {
+      button.innerHTML = "Copy Account No.";
+  }, 2000);
 }
 </script>
 
