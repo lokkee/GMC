@@ -34,9 +34,9 @@ function myFunction1() {
   
   /* Alert the copied text */
 //   alert("Copied: " + copyName.value);
-  button.text('Copied');
+  button.innerHTML = "Copied";
   setTimeout(function() {
-      button.text('Copy Name');
+      button.innerHTML = "Copy Name";
   }, 1000);
 }
 function myFunction2() {
