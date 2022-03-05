@@ -34,7 +34,7 @@ function myFunction1() {
   copyName.setSelectionRange(0, 99999); /* For mobile devices */
   
   /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyName.textContent);
+  navigator.clipboard.writeText(copyName.innerText);
   
   button.innerHTML = "Copied";
   setTimeout(function() {
