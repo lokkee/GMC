@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<p>如會眾想透過銀行轉帳奉獻，可將奉獻轉帳至教會戶口。</p>
+<p>如會眾想透過銀行轉帳奉獻，可將奉獻轉帳至教會戶口：</p>
 
 <p>
-  Name: 
-  <input type="text" value="Global Missional Church (Birmingham)" id="name">
-  <button onclick="myFunction1()">Copy Name</button>
-  <br>Sort Code: 
-  <input type="text" value="60-19-14" id="sortcode">
+  Name 
+  <input type="text" value="Global Missional Church (Birmingham)" id="name" readonly>
+  <button id="1" onclick="myFunction1()">Copy Name</button>
+  <br>Sort Code 
+  <input type="text" value="60-19-14" id="sortcode" readonly>
   <button onclick="myFunction2()">Copy Sort Code</button>
-  <br>Account No.: <input type="text" value="35453427" id="no">
+  <br>Account No. <input type="text" value="35453427" id="no" readonly>
   <button onclick="myFunction3()">Copy Account No.</button>
-  Reference請填上奉獻者全名和電話號碼以作紀錄。
+  <br>Reference請填上奉獻者全名和電話號碼以作紀錄。
 </p> 
   
 <script>
 function myFunction1() {
   /* Get the text field */
   var copyName = document.getElementById("name");
+  var button = document.getElementById("1");
 
   /* Select the text field */
   copyName.select();
@@ -32,7 +33,11 @@ function myFunction1() {
   navigator.clipboard.writeText(copyName.value);
   
   /* Alert the copied text */
-  alert("Copied: " + copyName.value);
+//   alert("Copied: " + copyName.value);
+  button.text('Copied');
+  setTimeout(function() {
+      button.text('Copy Name');
+  }, 1000);
 }
 function myFunction2() {
   /* Get the text field */
