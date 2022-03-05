@@ -7,7 +7,7 @@
 
 <h2>銀行轉帳奉獻</h2>  
   
-<p>如會眾想透過銀行轉帳奉獻，可將奉獻轉帳至教會戶口：</p>
+<p>如會眾想透過銀行轉帳奉獻，可將奉獻轉帳至以下教會戶口：</p>
 
 <p>
   Name 
@@ -18,7 +18,7 @@
   <button onclick="myFunction2()">Copy Sort Code</button>
   <br>Account No. <input type="text" value="35453427" id="no" readonly>
   <button onclick="myFunction3()">Copy Account No.</button>
-  <br>Reference請填上奉獻者全名和電話號碼以作紀錄。
+  <br>Reference 請填上奉獻者全名和電話號碼，以作紀錄。
 </p> 
   
 <script>
@@ -42,6 +42,7 @@ function myFunction1() {
 function myFunction2() {
   /* Get the text field */
   var copySortcode = document.getElementById("sortcode");
+  var button = document.getElementById("2");
 
   /* Select the text field */
   copySortcode.select();
@@ -58,6 +59,7 @@ function myFunction2() {
 function myFunction3() {
   /* Get the text field */
   var copyNo = document.getElementById("no");
+  var button = document.getElementById("3");
 
   /* Select the text field */
   copyNo.select();
